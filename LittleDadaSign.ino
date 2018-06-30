@@ -10,7 +10,7 @@ void setup() {
 #endif
   strip.begin();
   strip.show(); 
-}
+} 
 
 void loop() {
   simpleWave(0.03, 20, 20);
