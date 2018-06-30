@@ -27,8 +27,10 @@ void simpleWave(float rate, int cycles, int wait) {
         strip.setPixelColor(i,0,(int)cosWave/2,(int)sinWave);
       } else if (i <= 51) {
         strip.setPixelColor(i,(int)cosWave/2,0,(int)sinWave);
-      } else { 
+      } else if(i <= 60) { 
         strip.setPixelColor(i, (int)cosWSave, (int)sinWave, (int)cosWave / 2);
+    } else { 
+      strip.setPixelColor(i, 255, 255, 255); 
     }
     strip.show();
     delay(wait);
